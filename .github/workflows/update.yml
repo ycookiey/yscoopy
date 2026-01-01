@@ -1,0 +1,41 @@
+name: Update Manifests
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Scoop
+        run: |
+          Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+          irm get.scoop.sh -outfile 'install.ps1'
+          .\install.ps1 -RunAsAdmin
+        shell: powershell
+
+      - name: Update manifests
+        run: |
+          scoop install git
+          scoop config SCOOP_REPO 'https://github.com/ScoopInstaller/Scoop'
+          scoop update
+
+          # Check and update yClocky
+          $currentDir = Get-Location
+          scoop checkver yclocky -u -dir "$currentDir"
+        shell: powershell
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git diff --staged --quiet || git commit -m "Auto-update manifests"
+          git push
+        shell: bash
