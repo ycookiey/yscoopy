@@ -1,0 +1,21 @@
+{
+    "version": "1.0.3",
+    "description": "Minimal and stealthy desktop clock for Windows",
+    "homepage": "https://github.com/ycookiey/yClocky",
+    "license": "MIT",
+    "url": "https://github.com/ycookiey/yClocky/releases/download/v1.0.3/yClocky.exe",
+    "hash": "989491f20caac5ede46403eb5a3b33dcbd93c32aa8d4456176cd70b02d323cd9",
+    "bin": "yClocky.exe",
+    "shortcuts": [
+        [
+            "yClocky.exe",
+            "yClocky"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ycookiey/yClocky"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ycookiey/yClocky/releases/download/v$version/yClocky.exe"
+    }
+}
