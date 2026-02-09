@@ -48,6 +48,23 @@ Features:
 
 **Homepage**: https://github.com/ycookiey/yCursory
 
+### yStrokey
+
+Keyboard and mouse input visualizer (OSD) for Windows
+
+```powershell
+scoop install yscoopy/ystrokey
+```
+
+Features:
+- Keyboard input visualization with OSD overlay
+- Numpad key distinction
+- Hiragana/Katakana display support
+- Clipboard content display
+- Hotkey toggle (Ctrl+Alt+F12)
+
+**Homepage**: https://github.com/ycookiey/yStrokey
+
 ## Manifest Updates
 
 Manifests in this bucket are automatically updated when new releases are published.

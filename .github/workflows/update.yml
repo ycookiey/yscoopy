@@ -26,9 +26,10 @@ jobs:
           scoop config SCOOP_REPO 'https://github.com/ScoopInstaller/Scoop'
           scoop update
 
-          # Check and update yClocky
+          # Check and update manifests
           $currentDir = Get-Location
           scoop checkver yclocky -u -dir "$currentDir"
+          scoop checkver ystrokey -u -dir "$currentDir"
         shell: powershell
 
       - name: Commit changes
