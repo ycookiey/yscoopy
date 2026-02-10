@@ -22,6 +22,7 @@ jobs:
 
       - name: Update manifests
         run: |
+          $env:PATH = "$env:USERPROFILE\scoop\shims;$env:PATH"
           scoop install git
           scoop config SCOOP_REPO 'https://github.com/ScoopInstaller/Scoop'
           scoop update
