@@ -5,6 +5,8 @@ on:
     # Run daily at 00:00 UTC
     - cron: '0 0 * * *'
   workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   update:
@@ -16,8 +18,8 @@ jobs:
       - name: Install Scoop
         run: |
           Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-          irm get.scoop.sh -outfile 'install.ps1'
-          .\install.ps1 -RunAsAdmin
+          irm get.scoop.sh -outfile "$env:TEMP\install.ps1"
+          & "$env:TEMP\install.ps1" -RunAsAdmin
         shell: powershell
 
       - name: Update manifests
@@ -27,17 +29,16 @@ jobs:
           scoop config SCOOP_REPO 'https://github.com/ScoopInstaller/Scoop'
           scoop update
 
-          # Check and update manifests
-          $currentDir = Get-Location
-          scoop checkver yclocky -u -dir "$currentDir"
-          scoop checkver ystrokey -u -dir "$currentDir"
+          # Check and update all manifests
+          $checkver = "$env:USERPROFILE\scoop\apps\scoop\current\bin\checkver.ps1"
+          & $checkver -Dir . -Update
         shell: powershell
 
       - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add .
+          git add *.json
           git diff --staged --quiet || git commit -m "Auto-update manifests"
           git push
         shell: bash
