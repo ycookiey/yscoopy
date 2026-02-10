@@ -1,0 +1,7 @@
+{
+  "name": "yscoopy-webhook-relay",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy"
+  }
+}
