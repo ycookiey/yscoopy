@@ -1,10 +1,10 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Keyboard and mouse input visualizer (OSD) for Windows",
     "homepage": "https://github.com/ycookiey/yStrokey",
     "license": "MIT",
-    "url": "https://github.com/ycookiey/yStrokey/releases/download/v0.1.0/ystrokey.exe",
-    "hash": "57319bbb405b9534b2a23d0dfa1baedfa2af2331affb39b6e1b9a099db5c1494",
+    "url": "https://github.com/ycookiey/yStrokey/releases/download/v0.1.1/ystrokey.exe",
+    "hash": "d4969ca14d14afedb08cfd2f6db8758837f752c31f2e0d115f96cd11b3202abe",
     "bin": "ystrokey.exe",
     "shortcuts": [
         [
