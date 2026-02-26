@@ -1,0 +1,23 @@
+{
+    "version": "0.1.0",
+    "description": "TUI dashboard to monitor git status across multiple repositories",
+    "homepage": "https://github.com/ycookiey/git-all-status",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ycookiey/git-all-status/releases/download/v0.1.0/git-all-status-x86_64-pc-windows-msvc.zip",
+            "hash": ""
+        }
+    },
+    "bin": "git-all-status.exe",
+    "checkver": {
+        "github": "https://github.com/ycookiey/git-all-status"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ycookiey/git-all-status/releases/download/v$version/git-all-status-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
