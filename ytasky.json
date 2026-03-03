@@ -4,7 +4,7 @@
   "homepage": "https://github.com/ycookiey/ytasky",
   "license": "MIT",
   "url": "https://github.com/ycookiey/ytasky/releases/download/v0.1.0/ytasky.exe",
-  "hash": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+  "hash": "4e202007afff024ebd82f11e018370eb2eba4f6dac2228a4049aabf0add44a0d",
   "bin": "ytasky.exe",
   "shortcuts": [
     [
