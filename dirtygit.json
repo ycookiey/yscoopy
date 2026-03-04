@@ -1,0 +1,23 @@
+{
+    "version": "0.1.0",
+    "description": "TUI dashboard to monitor git status across multiple repositories",
+    "homepage": "https://github.com/ycookiey/dirtygit",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ycookiey/dirtygit/releases/download/v0.1.0/dirtygit-x86_64-pc-windows-msvc.zip",
+            "hash": ""
+        }
+    },
+    "bin": "dirtygit.exe",
+    "checkver": {
+        "github": "https://github.com/ycookiey/dirtygit"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ycookiey/dirtygit/releases/download/v$version/dirtygit-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
