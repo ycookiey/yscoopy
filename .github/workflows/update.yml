@@ -34,14 +34,14 @@ jobs:
 
           # Check and update all manifests
           $checkver = "$env:USERPROFILE\scoop\apps\scoop\current\bin\checkver.ps1"
-          & $checkver -Dir . -Update
+          & $checkver -Dir ./bucket -Update
         shell: powershell
 
       - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add *.json
+          git add bucket/*.json
           git diff --staged --quiet || git commit -m "Auto-update manifests"
           git push
         shell: bash
