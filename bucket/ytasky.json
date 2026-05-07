@@ -1,10 +1,10 @@
 {
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "A flexible time-blocking TUI scheduler",
     "homepage": "https://github.com/ycookiey/ytasky",
     "license": "MIT",
-    "url": "https://github.com/ycookiey/ytasky/releases/download/v0.2.0/ytasky.exe",
-    "hash": "edc3568dfe0d834d9c634210dfbe3bdb32e3e2b0c952c7e1ac5287aa97f0fafb",
+    "url": "https://github.com/ycookiey/ytasky/releases/download/v0.2.1/ytasky.exe",
+    "hash": "a6756a9a6e62326378fc264907925cb653a35f348b5b37b6ac6356e04fcad3cc",
     "bin": "ytasky.exe",
     "shortcuts": [
         [
