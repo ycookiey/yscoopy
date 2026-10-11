@@ -1,10 +1,10 @@
 {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "One fast binary that runs Claude Code hooks: rules in TOML files plus built-in checks",
     "homepage": "https://github.com/ycookiey/yhooky",
     "license": "MIT|Apache-2.0",
-    "url": "https://github.com/ycookiey/yhooky/releases/download/v0.6.0/yhooky.exe",
-    "hash": "e7f2fbd1483ddf4a3c08904b4075b58ff1b335368ddd5ae0c308f61ac01146a1",
+    "url": "https://github.com/ycookiey/yhooky/releases/download/v0.7.0/yhooky.exe",
+    "hash": "919f391cf9b0fc06d5e6b162537f2a2202a3c9abee3da5658c6294bb5b034003",
     "bin": "yhooky.exe",
     "checkver": {
         "github": "https://github.com/ycookiey/yhooky"
