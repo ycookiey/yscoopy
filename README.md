@@ -50,7 +50,7 @@ Features:
 
 ### yStrokey
 
-Keyboard and mouse input visualizer (OSD) for Windows
+Keystroke visualizer (OSD) for Windows
 
 ```powershell
 scoop install yscoopy/ystrokey

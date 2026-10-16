@@ -1,6 +1,6 @@
 {
     "version": "0.1.4",
-    "description": "Keyboard and mouse input visualizer (OSD) for Windows",
+    "description": "Keystroke visualizer (OSD) for Windows",
     "homepage": "https://github.com/ycookiey/yStrokey",
     "license": "MIT",
     "url": "https://github.com/ycookiey/yStrokey/releases/download/v0.1.4/ystrokey.exe",
