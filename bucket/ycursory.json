@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "IME cursor indicator with glow effect for Windows 11",
     "homepage": "https://github.com/ycookiey/yCursory",
     "license": "MIT",
-    "url": "https://github.com/ycookiey/yCursory/releases/download/v1.1.0/yCursory.exe",
-    "hash": "795fc8016e4ed51651df61bdad80931ee17aec24a6c9503b713ee752bce0cf1c",
+    "url": "https://github.com/ycookiey/yCursory/releases/download/v1.2.0/yCursory.exe",
+    "hash": "1573cabb920627aba33a9e9a5cdab11a350556a62b23d62928a6d6e28d65ba98",
     "bin": "yCursory.exe",
     "shortcuts": [
         [
