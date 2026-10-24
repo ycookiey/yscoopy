@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "description": "Keeps the Windows 11 taskbar hidden and shows it only while the Start menu is open",
+  "homepage": "https://github.com/ycookiey/ytaskbary",
+  "license": "MIT",
+  "url": "https://github.com/ycookiey/ytaskbary/releases/download/v0.1.0/ytaskbary.exe",
+  "hash": "8ae26c1477eba8a032d042783f9b0a6699f11bd1be3cfb53172e1dbd15784954",
+  "bin": "ytaskbary.exe",
+  "shortcuts": [
+    [
+      "ytaskbary.exe",
+      "ytaskbary"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/ycookiey/ytaskbary"
+  },
+  "autoupdate": {
+    "url": "https://github.com/ycookiey/ytaskbary/releases/download/v$version/ytaskbary.exe"
+  }
+}
