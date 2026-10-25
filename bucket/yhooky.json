@@ -1,15 +1,15 @@
 {
-    "version": "0.11.3",
+    "version": "0.12.0",
     "description": "One fast binary that runs Claude Code hooks: rules in TOML files plus built-in checks",
     "homepage": "https://github.com/ycookiey/yhooky",
     "license": "MIT|Apache-2.0",
     "notes": "The unidic folder holds a dictionary built from UniDic (The UniDic Consortium, BSD license; see unidic\\UNIDIC-BSD), read by the built-in check wago-verb-reminder.",
     "url": [
-        "https://github.com/ycookiey/yhooky/releases/download/v0.11.3/yhooky.exe",
+        "https://github.com/ycookiey/yhooky/releases/download/v0.12.0/yhooky.exe",
         "https://github.com/ycookiey/yhooky/releases/download/unidic-wago-1/unidic-wago.7z"
     ],
     "hash": [
-        "ff3f3a58f1b218191c7229d61560ae77221b8a8a3b9721b94ec63f1ff58f537f",
+        "715112855084db8f820891d85999e5898964a2a80d1e52d15dfe476013dfe372",
         "a21cbfe847bc642a43bf17a99a9a703c2dbe743e270363e8210ae0cc72ffa045"
     ],
     "extract_to": "unidic",
