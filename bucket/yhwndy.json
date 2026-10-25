@@ -1,10 +1,10 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Window control tool with transparency, borderless, and Ghost Mode for Windows",
     "homepage": "https://github.com/ycookiey/yhwndy",
     "license": "Unknown",
-    "url": "https://github.com/ycookiey/yhwndy/releases/download/v1.0.0/yhwndy.exe",
-    "hash": "097906adddf398b7c64d7240746b398286eadb756b7071252a3d6630a55628fb",
+    "url": "https://github.com/ycookiey/yhwndy/releases/download/v1.1.0/yhwndy.exe",
+    "hash": "cbb5c40359b2ff90323997a563fd29c20c762285f260a5c359b339c8dca6dfee",
     "bin": "yhwndy.exe",
     "shortcuts": [
         [
