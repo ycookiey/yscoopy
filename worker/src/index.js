@@ -1,5 +1,6 @@
-// yscoopy-webhook-relay
-// GitHub release webhook を受けて yscoopy の repository_dispatch をトリガーする
+// Relays GitHub release webhooks from app repositories to a repository_dispatch
+// on yscoopy, so the token that can write to yscoopy is kept here and not in
+// each app repository.
 
 export default {
   async fetch(request, env) {
@@ -9,7 +10,6 @@ export default {
 
     const body = await request.text();
 
-    // webhook 署名を検証
     const signature = request.headers.get('X-Hub-Signature-256');
     if (!signature) {
       return new Response('Missing signature', { status: 401 });
@@ -20,7 +20,6 @@ export default {
       return new Response('Invalid signature', { status: 401 });
     }
 
-    // release イベント以外は無視
     const event = request.headers.get('X-GitHub-Event');
     if (event !== 'release') {
       return new Response('Ignored event: ' + event, { status: 200 });
@@ -28,12 +27,10 @@ export default {
 
     const payload = JSON.parse(body);
 
-    // published 以外のアクションは無視
     if (payload.action !== 'published') {
       return new Response('Ignored action: ' + payload.action, { status: 200 });
     }
 
-    // yscoopy の repository_dispatch をトリガー
     const repo = payload.repository?.full_name ?? 'unknown';
     const tag = payload.release?.tag_name ?? 'unknown';
 
@@ -61,7 +58,6 @@ export default {
   },
 };
 
-// HMAC-SHA256 で webhook 署名を検証
 async function verifySignature(body, signature, secret) {
   const encoder = new TextEncoder();
   const key = await crypto.subtle.importKey(

@@ -1,6 +1,6 @@
 {
     "version": "0.2.2",
-    "description": "TUI dashboard to monitor git status across multiple repositories",
+    "description": "Terminal dashboard that finds git repositories under chosen folders and shows which have uncommitted or unpushed changes",
     "homepage": "https://github.com/ycookiey/dirtygit",
     "license": "MIT",
     "architecture": {

@@ -1,6 +1,6 @@
 {
     "version": "0.4.1",
-    "description": "CLAUDE.md sync daemon with skills management",
+    "description": "Watches project folders to link Claude Code skills into ~/.claude/skills and keep CLAUDE.md files in sync with a store folder",
     "homepage": "https://github.com/ycookiey/ywatchy",
     "license": "MIT",
     "url": "https://github.com/ycookiey/ywatchy/releases/download/v0.4.1/ywatchy.exe",

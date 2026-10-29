@@ -1,6 +1,6 @@
 {
     "version": "0.4.0",
-    "description": "A flexible time-blocking TUI scheduler",
+    "description": "A time-blocking scheduler for the terminal, with a TUI, a CLI and an MCP server",
     "homepage": "https://github.com/ycookiey/ytasky",
     "license": "MIT",
     "url": "https://github.com/ycookiey/ytasky/releases/download/v0.4.0/ytasky.exe",
