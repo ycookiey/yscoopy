@@ -1,8 +1,8 @@
 {
     "version": "1.2.0",
-    "description": "Window control tool with transparency, borderless, and Ghost Mode for Windows",
+    "description": "Windows tray tool that makes windows semi-transparent or borderless with hotkeys, and fades them out as the mouse comes near (Ghost Mode)",
     "homepage": "https://github.com/ycookiey/yhwndy",
-    "license": "Unknown",
+    "license": "MIT",
     "url": "https://github.com/ycookiey/yhwndy/releases/download/v1.2.0/yhwndy.exe",
     "hash": "e51440ed778dfa06eaa6ec69ff3b7a9291035d07dc995bb1cea673017b91a78d",
     "bin": "yhwndy.exe",

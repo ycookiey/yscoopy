@@ -1,8 +1,8 @@
 {
     "version": "1.1.0",
-    "description": "System monitor overlay with CPU/RAM graphs for Windows",
+    "description": "Always-on-top overlay that shows CPU and memory usage with graphs",
     "homepage": "https://github.com/ycookiey/yMonitory",
-    "license": "Unknown",
+    "license": "MIT",
     "url": "https://github.com/ycookiey/yMonitory/releases/download/v1.1.0/yMonitory.exe",
     "hash": "afec87d139db8fbdb2e2ba28d0927af6747eb546e7c582fe9e59074ec8dab9ad",
     "bin": "yMonitory.exe",
