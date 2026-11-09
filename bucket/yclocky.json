@@ -1,10 +1,10 @@
 {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Minimal frameless desktop clock for Windows that stays out of the taskbar, Alt+Tab and your clicks",
     "homepage": "https://github.com/ycookiey/yClocky",
     "license": "MIT",
-    "url": "https://github.com/ycookiey/yClocky/releases/download/v1.1.0/yClocky.exe",
-    "hash": "4940b0592df994927367958a00ed6448f742f64c2516b1aca6102e37962b7429",
+    "url": "https://github.com/ycookiey/yClocky/releases/download/v1.1.1/yClocky.exe",
+    "hash": "acabd4919289589c2cafbc40614a3005a4d39f6e53616b66f67b770c821b9838",
     "bin": "yClocky.exe",
     "shortcuts": [
         [

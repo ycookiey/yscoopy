@@ -1,10 +1,10 @@
 {
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Keystroke visualizer (OSD) for Windows",
     "homepage": "https://github.com/ycookiey/yStrokey",
     "license": "MIT",
-    "url": "https://github.com/ycookiey/yStrokey/releases/download/v0.1.6/ystrokey.exe",
-    "hash": "41489d7ef419cc52ad2382a7cda43527cb1a8e274dbf43b8ea553e4183a230c2",
+    "url": "https://github.com/ycookiey/yStrokey/releases/download/v0.1.7/ystrokey.exe",
+    "hash": "f855aae7b518723e9c1d003929932076578bce7716ee50e5377a46862f5240b5",
     "bin": "ystrokey.exe",
     "shortcuts": [
         [
